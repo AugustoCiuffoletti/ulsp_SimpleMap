@@ -14,8 +14,8 @@ var zoom = urlParams.get('zoom');
 var aMap = L.map('mapid', {
   center: L.latLng(centerLat, centerLng),
   zoom: zoom,
-  minZoom: zoom,
-  maxZoom:zoom,
   zoomControl: false,
+  dragging: false,
+  scrollWheelZoom: false,
   layers: [L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')],
 });

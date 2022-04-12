@@ -8,7 +8,6 @@ var urlParams = new URLSearchParams(window.location.search);
 centerLat = urlParams.get('lat');
 centerLng = urlParams.get('long');
 var zoom = urlParams.get('zoom');
-console.log("***" + centerLat + "," + centerLng);
 
 // Define a map
 var aMap = L.map('mapid', {
